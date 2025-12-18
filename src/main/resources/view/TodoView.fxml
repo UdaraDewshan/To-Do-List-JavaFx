@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="680.0" prefWidth="986.0" style="-fx-background-color: linear-gradient(to bottom right, #0B0F24, #1A1F36);" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TodoController">
+
+    <children>
+
+        <!-- Top Header Area -->
+        <HBox layoutX="20" layoutY="20" spacing="10">
+            <children>
+
+                <Text fill="white" text="Welcome">
+                    <font>
+                        <Font name="Algerian" size="32" />
+                    </font>
+                </Text>
+            </children>
+        </HBox>
+
+        <!-- User Name -->
+        <Text fill="#E3E3E3" layoutX="92.0" layoutY="129.0" text="Udara Dewshan">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Text>
+
+        <!-- Two Cards -->
+        <HBox layoutX="20" layoutY="150" spacing="30">
+            <children>
+
+                <!-- Left Card -->
+                <VBox prefHeight="490" prefWidth="433.0" style="-fx-background-color: rgba(255,255,255,0.08); -fx-background-radius: 20;">
+                    <effect>
+                        <DropShadow color="#00000070" radius="20" spread="0.2" />
+                    </effect>
+               <children>
+                  <CheckBox mnemonicParsing="false" textFill="WHITE">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox layoutX="10.0" layoutY="10.0" mnemonicParsing="false" textFill="WHITE">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox layoutX="10.0" layoutY="67.0" mnemonicParsing="false" textFill="WHITE">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </CheckBox>
+                  <JFXTextField focusColor="WHITE" layoutX="10.0" layoutY="98.0" unFocusColor="#bf2e2e" />
+                  <CheckBox layoutX="10.0" layoutY="124.0" mnemonicParsing="false" textFill="WHITE">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </CheckBox>
+                  <JFXTextField focusColor="WHITE" layoutX="10.0" layoutY="155.0" unFocusColor="#bf2e2e" />
+                  <CheckBox layoutX="10.0" layoutY="180.0" mnemonicParsing="false" textFill="WHITE">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </CheckBox>
+                  <JFXTextField focusColor="WHITE" layoutX="10.0" layoutY="212.0" unFocusColor="#bf2e2e" />
+                  <CheckBox layoutX="10.0" layoutY="237.0" mnemonicParsing="false" textFill="WHITE">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </CheckBox>
+                  <JFXTextField focusColor="WHITE" layoutX="10.0" layoutY="268.0" unFocusColor="#bf2e2e" />
+                  <Label prefHeight="34.0" prefWidth="428.0" text="Label" textFill="WHITE" />
+               </children>
+                </VBox>
+
+                <!-- Right Card -->
+                <VBox prefHeight="490" prefWidth="460" style="-fx-background-color: rgba(255,255,255,0.08); -fx-background-radius: 20;">
+                    <effect>
+                        <DropShadow color="#00000070" radius="20" spread="0.2" />
+                    </effect>
+               <children>
+                  <TextField alignment="TOP_CENTER" style="-fx-background-color: green;" text="Complete Task">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TableView prefHeight="461.0" prefWidth="490.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="Id" />
+                      <TableColumn prefWidth="121.60003662109375" text="Title" />
+                        <TableColumn prefWidth="135.99993896484375" text="Description" />
+                        <TableColumn prefWidth="126.4000244140625" text="Date" />
+                    </columns>
+                  </TableView>
+               </children>
+                </VBox>
+
+            </children>
+        </HBox>
+
+          <Text fill="#57a6ff" layoutX="688.0" layoutY="48.0" text="Todo List Page">
+              <font>
+                  <Font name="Algerian" size="32" />
+              </font>
+          </Text>
+
+          <ImageView fitHeight="60" fitWidth="60" layoutX="20.0" layoutY="71.0">
+              <image>
+                  <Image url="@../image/Screenshot 2025-11-27 160230.png" />
+              </image>
+          </ImageView>
+
+    </children>
+
+</AnchorPane>

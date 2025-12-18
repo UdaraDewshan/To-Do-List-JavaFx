@@ -1,0 +1,58 @@
+/* styles.css - place next to the FXML so the @styles.css reference resolves */
+
+
+.root {
+-fx-font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+
+.title {
+-fx-font-size: 20px;
+-fx-font-weight: 600;
+}
+
+
+.text-field {
+-fx-background-radius: 8;
+-fx-border-radius: 8;
+-fx-padding: 8 10;
+}
+
+
+.button {
+-fx-background-radius: 8;
+-fx-padding: 6 12;
+}
+
+
+.button.ghost {
+-fx-background-color: transparent;
+-fx-border-color: transparent;
+-fx-text-fill: #666;
+}
+
+
+.button.outline {
+-fx-background-color: transparent;
+-fx-border-width: 1;
+-fx-border-radius: 8;
+}
+
+
+.list-cell {
+-fx-padding: 8 10;
+}
+
+
+.list-view {
+-fx-background-radius: 10;
+-fx-border-radius: 10;
+-fx-padding: 6;
+}
+
+
+/* small niceties for delete button */
+.button {
+-fx-cursor: hand;
+}
+.button:focused { -fx-focus-color: transparent; }
